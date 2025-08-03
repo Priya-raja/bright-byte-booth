@@ -16,10 +16,11 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#' },
-    { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '#', type: 'scroll' },
+    { name: 'About', href: '#about', type: 'scroll' },
+    { name: 'Projects', href: '#projects', type: 'scroll' },
+    { name: 'Blog', href: '/blogs', type: 'route' },
+    { name: 'Contact', href: '#contact', type: 'scroll' },
   ];
 
   const scrollToSection = (href: string) => {
@@ -29,6 +30,14 @@ const Navigation = () => {
       document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
     }
     setIsOpen(false);
+  };
+
+  const handleNavigation = (item: { href: string; type: string }) => {
+    if (item.type === 'route') {
+      window.location.href = item.href;
+    } else {
+      scrollToSection(item.href);
+    }
   };
 
   return (
@@ -50,7 +59,7 @@ const Navigation = () => {
             {navItems.map((item) => (
               <button
                 key={item.name}
-                onClick={() => scrollToSection(item.href)}
+                onClick={() => handleNavigation(item)}
                 className="text-foreground hover:text-primary transition-smooth relative group"
               >
                 {item.name}
@@ -82,7 +91,7 @@ const Navigation = () => {
               {navItems.map((item) => (
                 <button
                   key={item.name}
-                  onClick={() => scrollToSection(item.href)}
+                  onClick={() => handleNavigation(item)}
                   className="block w-full text-left py-2 text-foreground hover:text-primary transition-smooth"
                 >
                   {item.name}

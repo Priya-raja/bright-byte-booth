@@ -46,6 +46,16 @@ const Hero = () => {
           <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth">
             Contact Me
           </Button>
+          <Button 
+            variant="secondary" 
+            size="lg" 
+            className="bg-secondary/20 border border-secondary text-foreground hover:bg-secondary hover:text-secondary-foreground transition-smooth"
+            asChild
+          >
+            <a href="/resume.pdf" download="John_Developer_Resume.pdf">
+              Download Resume
+            </a>
+          </Button>
         </div>
 
         {/* Social links */}
