@@ -30,11 +30,11 @@ const Hero = () => {
             John Developer
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Full Stack Developer & Creative Problem Solver
+            Frontend Developer with Node.js Backend Expertise
           </p>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            I craft exceptional digital experiences through clean code and innovative solutions. 
-            Specializing in React, Node.js, and modern web technologies.
+            I specialize in creating beautiful, responsive frontend experiences using React and modern JavaScript. 
+            My Node.js skills allow me to build complete features from UI to API, making me a versatile team player.
           </p>
         </div>
 

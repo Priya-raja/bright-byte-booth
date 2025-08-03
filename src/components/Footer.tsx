@@ -13,8 +13,8 @@ const Footer = () => {
               John Developer
             </h3>
             <p className="text-muted-foreground">
-              Full Stack Developer passionate about creating exceptional digital experiences
-              through clean code and innovative solutions.
+              Frontend Developer with Node.js backend skills, passionate about creating exceptional 
+              user experiences and building complete web solutions from UI to API.
             </p>
           </div>
 

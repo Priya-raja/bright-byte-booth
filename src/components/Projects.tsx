@@ -7,24 +7,24 @@ const Projects = () => {
   const projects = [
     {
       title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
+      description: "A modern e-commerce frontend built with React and TypeScript, featuring responsive design, shopping cart, and user authentication. Backend API built with Node.js and PostgreSQL.",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL"],
       githubUrl: "#",
       liveUrl: "#",
       delay: "0s"
     },
     {
       title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      technologies: ["Next.js", "TypeScript", "Prisma", "Socket.io", "Tailwind"],
+      description: "A collaborative task management interface with drag-and-drop functionality and real-time updates. Frontend built with Next.js, backend API created with Node.js and Socket.io.",
+      technologies: ["Next.js", "TypeScript", "Node.js", "Socket.io", "Tailwind CSS"],
       githubUrl: "#",
       liveUrl: "#",
       delay: "0.2s"
     },
     {
       title: "Analytics Dashboard",
-      description: "A comprehensive analytics dashboard for tracking business metrics with interactive charts and real-time data visualization.",
-      technologies: ["React", "D3.js", "Python", "FastAPI", "MongoDB"],
+      description: "An interactive analytics dashboard with beautiful data visualizations and responsive design. Frontend features dynamic charts built with React and D3.js, consuming REST APIs built with Node.js.",
+      technologies: ["React", "D3.js", "Node.js", "Express.js", "Chart.js"],
       githubUrl: "#",
       liveUrl: "#",
       delay: "0.4s"
