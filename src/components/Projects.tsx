@@ -10,7 +10,7 @@ const Projects = () => {
       description: "Full-stack coffee discovery app with geolocation, voting system, and Airtable integration.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Airtable", "Geolocation API", "Vercel"],
       githubUrl: "https://github.com/Priya-raja/next-js-projects",
-      liveUrl: "https://discover-coffee-stores-priyarajas-projects.vercel.app/",
+      liveUrl: "https://discover-coffee-stores-ochre-gamma.vercel.app/",
       imageUrl: "/projects/coffee.png", 
       delay: "0s"
     },
