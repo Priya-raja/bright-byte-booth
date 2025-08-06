@@ -3,8 +3,8 @@ import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
-  const scrollToAbout = () => {
-    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (sectionId: string) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -24,15 +24,15 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
         <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-            John Developer
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent leading-[2.2] pb-2">
+            Priya Raja
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in leading-[2]" style={{ animationDelay: '0.2s' }}>
             Frontend Developer with Node.js Backend Expertise
           </p>
-          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in leading-[2]" style={{ animationDelay: '0.4s' }}>
             I specialize in creating beautiful, responsive frontend experiences using React and modern JavaScript. 
             My Node.js skills allow me to build complete features from UI to API, making me a versatile team player.
           </p>
@@ -40,10 +40,19 @@ const Hero = () => {
 
         {/* Action buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          <Button size="lg" className="accent-gradient glow-subtle hover:glow-cyan transition-smooth">
+          <Button 
+            size="lg" 
+            className="accent-gradient glow-subtle hover:glow-cyan transition-smooth"
+            onClick={() => scrollToSection('projects')}
+          >
             View My Work
           </Button>
-          <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth">
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
+            onClick={() => scrollToSection('contact')}
+          >
             Contact Me
           </Button>
           <Button 
@@ -52,7 +61,12 @@ const Hero = () => {
             className="bg-secondary/20 border border-secondary text-foreground hover:bg-secondary hover:text-secondary-foreground transition-smooth"
             asChild
           >
-            <a href="/resume.pdf" download="John_Developer_Resume.pdf">
+            <a 
+              href="/resume/Priya_Raja_Resume.pdf" 
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Priya_Raja_Resume.pdf"
+            >
               Download Resume
             </a>
           </Button>
@@ -61,20 +75,27 @@ const Hero = () => {
         {/* Social links */}
         <div className="flex justify-center gap-6 mb-16 animate-fade-in" style={{ animationDelay: '0.8s' }}>
           <a 
-            href="#" 
+            href="https://github.com/Priya-raja" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="p-3 rounded-full border border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground transition-smooth glow-subtle hover:glow-cyan"
+            aria-label="GitHub Profile"
           >
             <Github className="w-6 h-6" />
           </a>
           <a 
-            href="#" 
+            href="https://www.linkedin.com/in/priya-raja-web/" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="p-3 rounded-full border border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground transition-smooth glow-subtle hover:glow-cyan"
+            aria-label="LinkedIn Profile"
           >
             <Linkedin className="w-6 h-6" />
           </a>
           <a 
-            href="#" 
+            href="mailto:priya.raja8002@gmail.com" 
             className="p-3 rounded-full border border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground transition-smooth glow-subtle hover:glow-cyan"
+            aria-label="Send Email"
           >
             <Mail className="w-6 h-6" />
           </a>
@@ -82,9 +103,10 @@ const Hero = () => {
 
         {/* Scroll indicator */}
         <button 
-          onClick={scrollToAbout}
+          onClick={() => scrollToSection('about')}
           className="animate-bounce hover:animate-none transition-smooth"
           style={{ animationDelay: '1s' }}
+          aria-label="Scroll to About section"
         >
           <ArrowDown className="w-8 h-8 text-primary mx-auto" />
         </button>

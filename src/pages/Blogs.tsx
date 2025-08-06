@@ -6,68 +6,69 @@ import { Link } from "react-router-dom";
 
 const Blogs = () => {
   // Simulated Medium blog posts data
+  // Simulated Medium blog posts data
   const blogPosts = [
     {
       id: 1,
-      title: "Building Scalable React Applications with TypeScript",
+      title: "Web Scraping HTML Table from Wiki",
+      excerpt: "Using Beautiful Soup to extract climate data from Wikipedia. Learn the essential steps of web scraping with Python, from installing Beautiful Soup to extracting and formatting data into CSV, XML, and JSON formats.",
+      publishedAt: "2024-02-10",
+      readTime: "8 min read",
+      tags: ["Python", "Web Scraping", "Beautiful Soup", "Data Science", "HTML Parsing"],
+      mediumUrl: "https://medium.com/analytics-vidhya/web-scraping-html-table-from-wiki-9b18cf169359",
+      claps: 156
+    },
+    {
+      id: 2,
+      title: "Simple Factory Pattern in JavaScript",
+      excerpt: "Learn about the Simple Factory Pattern, a fundamental creational design pattern in JavaScript. Understand how to create objects without exposing the creation logic and make your code more maintainable and flexible.",
+      publishedAt: "2024-02-05",
+      readTime: "6 min read",
+      tags: ["JavaScript", "Design Patterns", "Factory Pattern", "Object Creation", "Software Architecture"],
+      mediumUrl: "https://medium.com/@priya.thevar89/simple-factory-pattern-in-javacsript-36db97591aee",
+      claps: 34
+    },
+    {
+      id: 2,
+      title: "Understanding Map in JavaScript",
+      excerpt: "Are you a JavaScript learner trying to understand modern data structures? Meet Map—a powerful, flexible way to handle key-value pairs with better performance and flexible key types than regular objects.",
+      publishedAt: "2024-01-30",
+      readTime: "7 min read",
+      tags: ["JavaScript", "Data Structures", "Map", "ES6", "Performance"],
+      mediumUrl: "https://medium.com/@priya.thevar89/understanding-map-in-javascript-4df93392fe89",
+      claps: 89
+    },
+    {
+      id: 2,
+      title: "Mastering JavaScript Sets: Uniqueness Simplified",
+      excerpt: "Comprehensive guide to JavaScript Sets and their unique properties. Learn about Set methods, iteration techniques, and practical use cases for managing unique data collections efficiently.",
+      publishedAt: "2024-01-25",
+      readTime: "6 min read",
+      tags: ["JavaScript", "Data Structures", "Set", "ES6", "Collections"],
+      mediumUrl: "https://medium.com/@priya.thevar89/javascript-sets-uniqueness-simplified-3eaf6d132cd0",
+      claps: 47
+    },
+    {
+      id: 2,
+      title: "Solving 'Longest Substring Without Repeating Characters' Using JavaScript Set",
+      excerpt: "Learn how using a simple Set and the sliding window technique can solve this classic LeetCode problem efficiently in JavaScript. Perfect for coding interviews and understanding algorithm optimization.",
+      publishedAt: "2024-01-20",
+      readTime: "5 min read",
+      tags: ["JavaScript", "Algorithms", "Data Structures", "LeetCode", "Set"],
+      mediumUrl: "https://medium.com/@priya.thevar89/solving-longest-substring-without-repeating-characters-using-javascript-set-f42dc8877077",
+      claps: 23
+    },
+    {
+      id: 3,
+      title: "Prototypes vs OOP in JavaScript: What's the Difference?",
       excerpt: "Learn how to structure large React applications using TypeScript, best practices for component organization, and advanced patterns for maintainable code.",
       publishedAt: "2024-01-15",
       readTime: "8 min read",
       tags: ["React", "TypeScript", "Architecture"],
-      mediumUrl: "https://medium.com/@johndeveloper/building-scalable-react-applications",
-      claps: 245
+      mediumUrl: "https://medium.com/@priya.thevar89/prototypes-vs-oop-in-javascript-whats-the-difference-2a5ec5f697a9",
+      claps: 5
     },
-    {
-      id: 2,
-      title: "The Future of Web Development: What's Coming in 2024",
-      excerpt: "Explore upcoming trends in web development, from new JavaScript features to emerging frameworks and tools that will shape the industry.",
-      publishedAt: "2024-01-08",
-      readTime: "6 min read",
-      tags: ["Web Development", "Trends", "JavaScript"],
-      mediumUrl: "https://medium.com/@johndeveloper/future-web-development-2024",
-      claps: 189
-    },
-    {
-      id: 3,
-      title: "Mastering CSS Grid: A Complete Guide",
-      excerpt: "Deep dive into CSS Grid with practical examples, advanced techniques, and real-world use cases for creating responsive layouts.",
-      publishedAt: "2023-12-22",
-      readTime: "12 min read",
-      tags: ["CSS", "Grid", "Layout", "Responsive Design"],
-      mediumUrl: "https://medium.com/@johndeveloper/mastering-css-grid-guide",
-      claps: 312
-    },
-    {
-      id: 4,
-      title: "API Design Best Practices for Modern Applications",
-      excerpt: "Essential principles for designing RESTful APIs that are scalable, maintainable, and developer-friendly. Includes examples and common pitfalls to avoid.",
-      publishedAt: "2023-12-10",
-      readTime: "10 min read",
-      tags: ["API Design", "REST", "Backend", "Node.js"],
-      mediumUrl: "https://medium.com/@johndeveloper/api-design-best-practices",
-      claps: 178
-    },
-    {
-      id: 5,
-      title: "Optimizing React Performance: Tips and Tricks",
-      excerpt: "Comprehensive guide to React performance optimization, covering memo, useMemo, useCallback, code splitting, and advanced optimization techniques.",
-      publishedAt: "2023-11-28",
-      readTime: "9 min read",
-      tags: ["React", "Performance", "Optimization"],
-      mediumUrl: "https://medium.com/@johndeveloper/react-performance-optimization",
-      claps: 267
-    },
-    {
-      id: 6,
-      title: "From Junior to Senior: My Journey as a Developer",
-      excerpt: "Personal insights and lessons learned during my journey from junior to senior developer, including challenges faced and skills developed along the way.",
-      publishedAt: "2023-11-15",
-      readTime: "7 min read",
-      tags: ["Career", "Personal Growth", "Advice"],
-      mediumUrl: "https://medium.com/@johndeveloper/junior-to-senior-developer-journey",
-      claps: 456
-    }
-  ];
+  ]
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('en-US', {
@@ -179,7 +180,7 @@ const Blogs = () => {
               asChild
             >
               <a 
-                href="https://medium.com/@johndeveloper" 
+                href="https://medium.com/@priya.thevar89" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >

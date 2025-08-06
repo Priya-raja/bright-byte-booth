@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-              John Developer
+              Priya Raja
             </h3>
             <p className="text-muted-foreground">
               Frontend Developer with Node.js backend skills, passionate about creating exceptional 
@@ -38,25 +38,25 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold">Get In Touch</h4>
             <div className="space-y-2">
-              <p className="text-muted-foreground">john@developer.com</p>
-              <p className="text-muted-foreground">+1 (555) 123-4567</p>
-              <p className="text-muted-foreground">San Francisco, CA</p>
+              <p className="text-muted-foreground">priya.raja8002@gmail.com</p>
+              <p className="text-muted-foreground">+971565809793</p>
+              <p className="text-muted-foreground">Dubai, UAE</p>
             </div>
             <div className="flex gap-4 pt-2">
               <a 
-                href="#" 
+                href="https://github.com/Priya-raja" 
                 className="p-2 rounded-full text-muted-foreground hover:text-primary hover:bg-primary/10 transition-smooth"
               >
                 <Github className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/priya-raja-web" 
                 className="p-2 rounded-full text-muted-foreground hover:text-primary hover:bg-primary/10 transition-smooth"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href="mailto:priya.raja8002@gmail.com" 
                 className="p-2 rounded-full text-muted-foreground hover:text-primary hover:bg-primary/10 transition-smooth"
               >
                 <Mail className="w-5 h-5" />
@@ -68,7 +68,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} John Developer. All rights reserved.
+            © {currentYear} Priya Raja. All rights reserved.
           </p>
           <p className="text-muted-foreground text-sm flex items-center gap-1">
             Made with <Heart className="w-4 h-4 text-red-500" /> using React & Tailwind

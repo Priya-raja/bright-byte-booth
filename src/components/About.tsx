@@ -4,15 +4,15 @@ import { Card } from "@/components/ui/card";
 const About = () => {
   const frontendSkills = [
     "React", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3", "Tailwind CSS", 
-    "Next.js", "Vue.js", "Sass", "Responsive Design", "UI/UX Design"
+    "Next.js", "Sass", "Responsive Design", "UI/UX Design"
   ];
 
   const backendSkills = [
-    "Node.js", "Express.js", "REST APIs", "PostgreSQL", "MongoDB", "JWT Auth"
+    "Node.js", "Express.js", "REST APIs", "PostgreSQL", "MongoDB", "Nest js","JWT Auth"
   ];
 
   const toolsSkills = [
-    "Git", "Docker", "AWS", "Webpack", "Vite", "Jest", "Cypress"
+    "Git", "Docker", "AWS", "Webpack", "Vite", "Jest"
   ];
 
   return (

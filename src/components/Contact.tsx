@@ -27,7 +27,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p className="text-muted-foreground">john@developer.com</p>
+                  <p className="text-muted-foreground">priya.raja8002@gmail.com</p>
                 </div>
               </div>
             </Card>
@@ -39,7 +39,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground">+971565809793</p>
                 </div>
               </div>
             </Card>
@@ -51,7 +51,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">Location</h3>
-                  <p className="text-muted-foreground">San Francisco, CA</p>
+                  <p className="text-muted-foreground">Dubai, UAE</p>
                 </div>
               </div>
             </Card>
@@ -61,22 +61,16 @@ const Contact = () => {
               <h3 className="font-semibold mb-4">Connect with me</h3>
               <div className="flex gap-4">
                 <a 
-                  href="#" 
+                  href="https://github.com/Priya-raja" 
                   className="p-3 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-smooth glow-subtle hover:glow-cyan"
                 >
                   <Github className="w-5 h-5" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/in/priya-raja-web/" 
                   className="p-3 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-smooth glow-subtle hover:glow-cyan"
                 >
                   <Linkedin className="w-5 h-5" />
-                </a>
-                <a 
-                  href="#" 
-                  className="p-3 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-smooth glow-subtle hover:glow-cyan"
-                >
-                  <Twitter className="w-5 h-5" />
                 </a>
               </div>
             </div>
