@@ -10,7 +10,7 @@ const Projects = () => {
       description: "Full-stack coffee discovery app with geolocation, voting system, and Airtable integration.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Airtable", "Geolocation API", "Vercel"],
       githubUrl: "https://github.com/Priya-raja/next-js-projects",
-      liveUrl: "https://discover-coffee-stores-git-master-priyarajas-projects.vercel.app/",
+      liveUrl: "https://discover-coffee-stores-priyarajas-projects.vercel.app/",
       imageUrl: "/projects/coffee.png", 
       delay: "0s"
     },
@@ -19,6 +19,7 @@ const Projects = () => {
       description: "Interactive meme generator app with customizable text overlays and popular meme templates.",
       technologies: ["React", "JavaScript", "CSS3", "Meme API", "Canvas API", "Responsive Design"],
       githubUrl: "https://github.com/Priya-raja/create-react-app-Meme-Generator", 
+      liveUrl: "https://ecstatic-kowalevski-4d063e.netlify.app/",
       imageUrl: "/projects/meme.png", 
       delay: "0.2s"
     },
@@ -46,7 +47,7 @@ const Projects = () => {
       technologies: ["JavaScript", "HTML5", "CSS3", "DOM Manipulation", "Real-time Analytics"],
       githubUrl: "#",
       liveUrl: "https://wordspeed-priya.netlify.app/",
-      imageUrl: "/projects/wordspeed.png", // Add your project screenshot
+      imageUrl: "/projects/wordspeed.png", 
       delay: "0.8s"
     },
     {
@@ -55,7 +56,7 @@ const Projects = () => {
       technologies: ["JavaScript", "HTML5 Canvas", "Game Development", "Animation", "Event Handling"],
       githubUrl: "#",
       liveUrl: "https://myfirstpacmangame.netlify.app/",
-      imageUrl: "/projects/pacman.png", // Add your project screenshot
+      imageUrl: "/projects/pacman.png", 
       delay: "1s"
     }
   ];

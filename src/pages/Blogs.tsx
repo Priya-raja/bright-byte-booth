@@ -10,64 +10,65 @@ const Blogs = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "Web Scraping HTML Table from Wiki",
-      excerpt: "Using Beautiful Soup to extract climate data from Wikipedia. Learn the essential steps of web scraping with Python, from installing Beautiful Soup to extracting and formatting data into CSV, XML, and JSON formats.",
-      publishedAt: "2024-02-10",
+      title: "Prototypes vs OOP in JavaScript: What's the Difference?",
+      excerpt: "Learn how to structure large React applications using TypeScript, best practices for component organization, and advanced patterns for maintainable code.",
+      publishedAt: "2025-05-15",
       readTime: "8 min read",
-      tags: ["Python", "Web Scraping", "Beautiful Soup", "Data Science", "HTML Parsing"],
-      mediumUrl: "https://medium.com/analytics-vidhya/web-scraping-html-table-from-wiki-9b18cf169359",
-      claps: 156
+      tags: ["React", "TypeScript", "Architecture"],
+      mediumUrl: "https://medium.com/@priya.thevar89/prototypes-vs-oop-in-javascript-whats-the-difference-2a5ec5f697a9",
+      claps: 5
     },
     {
       id: 2,
+      title: "Web Scraping HTML Table from Wiki",
+      excerpt: "Using Beautiful Soup to extract climate data from Wikipedia. Learn the essential steps of web scraping with Python, from installing Beautiful Soup to extracting and formatting data into CSV, XML, and JSON formats.",
+      publishedAt: "2019-12-16",
+      readTime: "8 min read",
+      tags: ["Python", "Web Scraping", "Beautiful Soup", "Data Science", "HTML Parsing"],
+      mediumUrl: "https://medium.com/analytics-vidhya/web-scraping-html-table-from-wiki-9b18cf169359",
+      claps: 21
+    },
+    {
+      id: 3,
       title: "Simple Factory Pattern in JavaScript",
       excerpt: "Learn about the Simple Factory Pattern, a fundamental creational design pattern in JavaScript. Understand how to create objects without exposing the creation logic and make your code more maintainable and flexible.",
       publishedAt: "2024-02-05",
       readTime: "6 min read",
       tags: ["JavaScript", "Design Patterns", "Factory Pattern", "Object Creation", "Software Architecture"],
       mediumUrl: "https://medium.com/@priya.thevar89/simple-factory-pattern-in-javacsript-36db97591aee",
-      claps: 34
+      claps: ''
     },
     {
-      id: 2,
+      id: 4,
       title: "Understanding Map in JavaScript",
       excerpt: "Are you a JavaScript learner trying to understand modern data structures? Meet Map—a powerful, flexible way to handle key-value pairs with better performance and flexible key types than regular objects.",
-      publishedAt: "2024-01-30",
+      publishedAt: "2025-04-16",
       readTime: "7 min read",
       tags: ["JavaScript", "Data Structures", "Map", "ES6", "Performance"],
       mediumUrl: "https://medium.com/@priya.thevar89/understanding-map-in-javascript-4df93392fe89",
-      claps: 89
+      claps: ''
     },
     {
-      id: 2,
+      id: 5,
       title: "Mastering JavaScript Sets: Uniqueness Simplified",
       excerpt: "Comprehensive guide to JavaScript Sets and their unique properties. Learn about Set methods, iteration techniques, and practical use cases for managing unique data collections efficiently.",
       publishedAt: "2024-01-25",
       readTime: "6 min read",
       tags: ["JavaScript", "Data Structures", "Set", "ES6", "Collections"],
       mediumUrl: "https://medium.com/@priya.thevar89/javascript-sets-uniqueness-simplified-3eaf6d132cd0",
-      claps: 47
+      claps: ''
     },
     {
-      id: 2,
+      id: 6,
       title: "Solving 'Longest Substring Without Repeating Characters' Using JavaScript Set",
       excerpt: "Learn how using a simple Set and the sliding window technique can solve this classic LeetCode problem efficiently in JavaScript. Perfect for coding interviews and understanding algorithm optimization.",
-      publishedAt: "2024-01-20",
+      publishedAt: "2025-04-29",
       readTime: "5 min read",
       tags: ["JavaScript", "Algorithms", "Data Structures", "LeetCode", "Set"],
       mediumUrl: "https://medium.com/@priya.thevar89/solving-longest-substring-without-repeating-characters-using-javascript-set-f42dc8877077",
-      claps: 23
+      claps: ''
     },
-    {
-      id: 3,
-      title: "Prototypes vs OOP in JavaScript: What's the Difference?",
-      excerpt: "Learn how to structure large React applications using TypeScript, best practices for component organization, and advanced patterns for maintainable code.",
-      publishedAt: "2024-01-15",
-      readTime: "8 min read",
-      tags: ["React", "TypeScript", "Architecture"],
-      mediumUrl: "https://medium.com/@priya.thevar89/prototypes-vs-oop-in-javascript-whats-the-difference-2a5ec5f697a9",
-      claps: 5
-    },
+    
   ]
 
   const formatDate = (dateString: string) => {

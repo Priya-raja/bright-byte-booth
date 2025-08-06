@@ -27,7 +27,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p className="text-muted-foreground">priya.raja8002@gmail.com</p>
+                  <a 
+                    href="mailto:priya.raja8002@gmail.com"
+                    className="text-muted-foreground hover:text-primary transition-smooth"
+                  >
+                    priya.raja8002@gmail.com
+                  </a>
                 </div>
               </div>
             </Card>
@@ -39,7 +44,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <p className="text-muted-foreground">+971565809793</p>
+                  <a 
+                    href="tel:+971565809793"
+                    className="text-muted-foreground hover:text-primary transition-smooth"
+                  >
+                    +971565809793
+                  </a>
                 </div>
               </div>
             </Card>
@@ -62,13 +72,19 @@ const Contact = () => {
               <div className="flex gap-4">
                 <a 
                   href="https://github.com/Priya-raja" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-smooth glow-subtle hover:glow-cyan"
+                  aria-label="GitHub Profile"
                 >
                   <Github className="w-5 h-5" />
                 </a>
                 <a 
                   href="https://www.linkedin.com/in/priya-raja-web/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-smooth glow-subtle hover:glow-cyan"
+                  aria-label="LinkedIn Profile"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
@@ -90,15 +106,29 @@ const Contact = () => {
                 <Button 
                   size="lg" 
                   className="w-full accent-gradient glow-subtle hover:glow-cyan transition-smooth"
+                  asChild
                 >
-                  Send Message
+                  <a 
+                    href="mailto:priya.raja8002@gmail.com?subject=Let's Work Together&body=Hi Priya,%0A%0AI'd like to discuss a potential project with you.%0A%0APlease let me know when you're available to chat.%0A%0ABest regards,"
+                  >
+                    Send Message
+                  </a>
                 </Button>
+
                 <Button 
                   variant="outline" 
                   size="lg" 
                   className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
+                  asChild
                 >
-                  Download Resume
+                  <a 
+                    href="/resume/Priya_Raja_Resume.pdf" 
+                    download="Priya_Raja_Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Download Resume
+                  </a>
                 </Button>
               </div>
             </CardContent>

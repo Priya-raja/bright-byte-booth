@@ -28,6 +28,9 @@ const Footer = () => {
               <a href="#projects" className="block text-muted-foreground hover:text-primary transition-smooth">
                 Projects
               </a>
+              <a href="/blogs" className="block text-muted-foreground hover:text-primary transition-smooth">
+                Blogs
+              </a>
               <a href="#contact" className="block text-muted-foreground hover:text-primary transition-smooth">
                 Contact
               </a>

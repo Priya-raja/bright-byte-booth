@@ -51,7 +51,7 @@ const Navigation = () => {
             onClick={() => scrollToSection('#')}
             className="text-xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent"
           >
-            Priya
+            P
           </button>
 
           {/* Desktop Navigation */}
