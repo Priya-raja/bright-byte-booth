@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 const About = () => {
   const frontendSkills = [
     "React", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3", "Tailwind CSS", 
-    "Next.js", "Sass", "Responsive Design", "UI/UX Design"
+    "Next.js", "Sass", "Three.js", "Responsive Design", "UI/UX Design"
   ];
 
   const backendSkills = [
@@ -34,7 +34,7 @@ const About = () => {
             <div className="space-y-4 text-muted-foreground">
               <p>
                 With over 5 years of experience in frontend development, I specialize in creating 
-                beautiful, responsive, and user-friendly web applications using React, TypeScript, 
+                beautiful, responsive, and user-friendly web applications using React,TypeScript, 
                 and modern CSS frameworks. My passion lies in crafting pixel-perfect interfaces 
                 that provide exceptional user experiences.
               </p>
