@@ -5,6 +5,7 @@ import { ExternalLink, Github } from "lucide-react";
 
 const Projects = () => {
   const projects = [
+    
     {
       title: "Coffee Connoisseur",
       description: "Full-stack coffee discovery app with geolocation, voting system, and Airtable integration.",
@@ -15,15 +16,6 @@ const Projects = () => {
       delay: "0s"
     },
     {
-      title: "Meme Generator",
-      description: "Interactive meme generator app with customizable text overlays and popular meme templates.",
-      technologies: ["React", "JavaScript", "CSS3", "Meme API", "Canvas API", "Responsive Design"],
-      githubUrl: "https://github.com/Priya-raja/create-react-app-Meme-Generator", 
-      liveUrl: "https://ecstatic-kowalevski-4d063e.netlify.app/",
-      imageUrl: "/projects/meme.png", 
-      delay: "0.2s"
-    },
-    {
       title: "FotoFlix",
       description: "Modern photo search application with API integration for seamless image browsing.",
       technologies: ["React", "JavaScript", "CSS3", "API Integration", "Responsive Design"],
@@ -31,33 +23,6 @@ const Projects = () => {
       liveUrl: "https://fotosearch.netlify.app/",
       imageUrl: "/projects/fotoflix.png", 
       delay: "0.4s"
-    },
-    {
-      title: "Grocery Bud",
-      description: "Grocery list management app with CRUD operations and local storage persistence.",
-      technologies: ["React", "Node.js", "Local Storage", "CSS3", "React Query"],
-      githubUrl: "https://github.com/Priya-raja/FrontendJourney/tree/master/grocerybud",
-      liveUrl: "https://frontend-journey-hazel.vercel.app/",
-      imageUrl: "/projects/grocery.png", 
-      delay: "0.6s"
-    },
-    {
-      title: "WordSpeed Analyzer",
-      description: "Interactive typing speed tool with real-time word count and analytics.",
-      technologies: ["JavaScript", "HTML5", "CSS3", "DOM Manipulation", "Real-time Analytics"],
-      githubUrl: "#",
-      liveUrl: "https://wordspeed-priya.netlify.app/",
-      imageUrl: "/projects/wordspeed.png", 
-      delay: "0.8s"
-    },
-    {
-      title: "Pacman Game",
-      description: "Classic Pacman game with collision detection, scoring system, and smooth animations.",
-      technologies: ["JavaScript", "HTML5 Canvas", "Game Development", "Animation", "Event Handling"],
-      githubUrl: "#",
-      liveUrl: "https://myfirstpacmangame.netlify.app/",
-      imageUrl: "/projects/pacman.png", 
-      delay: "1s"
     }
   ];
 

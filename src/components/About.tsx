@@ -2,17 +2,20 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 
 const About = () => {
-  const frontendSkills = [
-    "React", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3", "Tailwind CSS", 
-    "Next.js", "Sass", "Three.js", "Responsive Design", "UI/UX Design"
+  const aiMLSkills = [
+    "Python", "LangChain", "RAG Systems", "FAISS", "Pydantic","Machine Learning", 
+    "Agentic AI", "Multi-Agent Systems", "Vector Databases", 
+    "Prompt Engineering", "OpenAI API", "Claude API", "Semantic Search"
   ];
 
-  const backendSkills = [
-    "Node.js", "Express.js", "REST APIs", "PostgreSQL", "MongoDB", "Nest js","JWT Auth"
+  const fullStackSkills = [
+    "React", "TypeScript", "JavaScript (ES6+)", "Next.js", "Node.js", 
+    "NestJS", "MongoDB", "REST APIs", "Tailwind CSS", "Express.js"
   ];
 
   const toolsSkills = [
-    "Git", "Docker", "AWS", "Webpack", "Vite", "Jest"
+    "Git", "Docker", "AWS", "Chrome Extension Development", 
+    "Jupyter", "VS Code", "Postman"
   ];
 
   return (
@@ -29,25 +32,28 @@ const About = () => {
           {/* About text */}
           <div className="animate-fade-in-left">
             <h3 className="text-2xl font-semibold mb-6 text-primary">
-              Frontend-Focused Developer with Backend Skills
+              AI Engineer & Full Stack Developer
             </h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                With over 5 years of experience in frontend development, I specialize in creating 
-                beautiful, responsive, and user-friendly web applications using React,TypeScript, 
-                and modern CSS frameworks. My passion lies in crafting pixel-perfect interfaces 
-                that provide exceptional user experiences.
+                I'm an AI Engineer specializing in building autonomous AI agents, RAG systems, 
+                and agentic AI solutions. After 5+ years as a Full Stack Developer working with 
+                the MERN stack, I've successfully transitioned into AI/ML engineering through 
+                The School of AI (TSAI) Agentic AI course and Ed Donner Udemy courses, where I mastered building production-ready 
+                AI systems.
               </p>
               <p>
-                While my expertise is frontend-focused, I'm also proficient in Node.js backend development. 
-                This allows me to understand the full development cycle, create seamless integrations, 
-                and build complete features independently when needed. I can design APIs, work with databases, 
-                and handle authentication systems.
+                My expertise includes developing multi-agent architectures using LangChain, 
+                implementing RAG systems with FAISS vector databases, and creating intelligent 
+                Chrome extensions with agentic capabilities. I work with Pydantic models for 
+                structured AI outputs, design sophisticated prompting strategies, and build 
+                AI-powered applications that solve real-world problems.
               </p>
               <p>
-                I believe in writing clean, maintainable code and staying current with frontend trends. 
-                My dual skillset makes me a valuable team member who can bridge the gap between 
-                frontend and backend development.
+                My unique combination of full-stack development and AI engineering allows me to 
+                build complete, scalable AI solutions from frontend to backend to AI layer. 
+                I document my journey on Medium, LinkedIn, and my YouTube channel "myAI Journey," 
+                sharing insights on agentic AI, structured prompting, and production AI systems.
               </p>
             </div>
           </div>
@@ -58,13 +64,13 @@ const About = () => {
               Technologies & Skills
             </h4>
             
-            {/* Frontend Skills */}
+            {/* AI/ML Skills */}
             <div className="mb-6">
               <h5 className="text-sm font-medium text-primary mb-3 uppercase tracking-wider">
-                Frontend Expertise
+                AI/ML Expertise
               </h5>
               <div className="flex flex-wrap gap-2">
-                {frontendSkills.map((skill, index) => (
+                {aiMLSkills.map((skill, index) => (
                   <Badge 
                     key={skill} 
                     variant="secondary" 
@@ -77,18 +83,18 @@ const About = () => {
               </div>
             </div>
 
-            {/* Backend Skills */}
+            {/* Full Stack Skills */}
             <div className="mb-6">
               <h5 className="text-sm font-medium text-accent mb-3 uppercase tracking-wider">
-                Backend Skills
+                Full Stack Development
               </h5>
               <div className="flex flex-wrap gap-2">
-                {backendSkills.map((skill, index) => (
+                {fullStackSkills.map((skill, index) => (
                   <Badge 
                     key={skill} 
                     variant="secondary" 
                     className="px-3 py-1 text-xs bg-accent/15 text-accent border border-accent/30 hover:bg-accent hover:text-accent-foreground transition-smooth animate-scale-in"
-                    style={{ animationDelay: `${(frontendSkills.length + index) * 0.05}s` }}
+                    style={{ animationDelay: `${(aiMLSkills.length + index) * 0.05}s` }}
                   >
                     {skill}
                   </Badge>
@@ -99,7 +105,7 @@ const About = () => {
             {/* Tools */}
             <div>
               <h5 className="text-sm font-medium text-muted-foreground mb-3 uppercase tracking-wider">
-                Tools & DevOps
+                Tools & Platforms
               </h5>
               <div className="flex flex-wrap gap-2">
                 {toolsSkills.map((skill, index) => (
@@ -107,7 +113,7 @@ const About = () => {
                     key={skill} 
                     variant="secondary" 
                     className="px-3 py-1 text-xs bg-muted text-muted-foreground border border-muted-foreground/20 hover:bg-muted-foreground hover:text-background transition-smooth animate-scale-in"
-                    style={{ animationDelay: `${(frontendSkills.length + backendSkills.length + index) * 0.05}s` }}
+                    style={{ animationDelay: `${(aiMLSkills.length + fullStackSkills.length + index) * 0.05}s` }}
                   >
                     {skill}
                   </Badge>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Youtube, BookOpen } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -30,11 +30,12 @@ const Hero = () => {
             Priya Raja
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in leading-[2]" style={{ animationDelay: '0.2s' }}>
-            Frontend Developer with Node.js Backend Expertise
+            AI Engineer | Building Autonomous Agents & RAG Systems
           </p>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in leading-[2]" style={{ animationDelay: '0.4s' }}>
-            I specialize in creating beautiful, responsive frontend experiences using React and modern JavaScript. 
-            My Node.js skills allow me to build complete features from UI to API, making me a versatile team player.
+            I build production-ready AI systems with LangChain, FAISS, and multi-agent architectures. 
+            With 5+ years of full-stack experience (MERN), I create complete AI solutions from frontend to AI layer. 
+            Currently sharing my journey through "myAI Journey" on YouTube and technical articles on Medium.
           </p>
         </div>
 
@@ -45,7 +46,7 @@ const Hero = () => {
             className="accent-gradient glow-subtle hover:glow-cyan transition-smooth"
             onClick={() => scrollToSection('projects')}
           >
-            View My Work
+            View AI Projects
           </Button>
           <Button 
             variant="outline" 
@@ -93,7 +94,25 @@ const Hero = () => {
             <Linkedin className="w-6 h-6" />
           </a>
           <a 
-            href="mailto:priya.raja8002@gmail.com" 
+            href="https://youtube.com/@myAIJourney" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full border border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground transition-smooth glow-subtle hover:glow-cyan"
+            aria-label="YouTube Channel - myAI Journey"
+          >
+            <Youtube className="w-6 h-6" />
+          </a>
+          <a 
+            href="https://medium.com/@priya.thevar89" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full border border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground transition-smooth glow-subtle hover:glow-cyan"
+            aria-label="Medium Blog"
+          >
+            <BookOpen className="w-6 h-6" />
+          </a>
+          <a 
+            href="mailto:workinfo.priya@gmail.com" 
             className="p-3 rounded-full border border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground transition-smooth glow-subtle hover:glow-cyan"
             aria-label="Send Email"
           >
